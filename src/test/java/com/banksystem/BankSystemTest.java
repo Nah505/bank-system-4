@@ -104,15 +104,8 @@ class BankSystemTest {
     CheckingAccount other = new CheckingAccount(1001L, 9999.0);
     Assertions.assertEquals(checkingAccount, other);
   }
-  @Test
-  @DisplayName("Path cứng Windows - sẽ lỗi trên Linux/macOS")
-  void hardcodedWindowsPathFails() {
-    // Dùng dấu \ cứng → lỗi trên Ubuntu/macOS
-    String path = "logs\\transactions.txt";
-    java.io.File file = new java.io.File(path);
-    // Trên Windows: path hợp lệ, trên Linux: coi cả chuỗi là tên file
-    Assertions.assertTrue(file.getPath().contains("transactions.txt"));
-  }
+
+
   @Test
   @DisplayName("Path dùng File.separator - chạy đúng mọi hệ điều hành")
   void crossPlatformPathWorks() {
