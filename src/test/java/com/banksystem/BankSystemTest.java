@@ -119,7 +119,7 @@ class BankSystemTest {
     // Cách 1: File.separator
     String path = "logs" + File.separator + "transactions.txt";
 
-    // Cách 2: java.nio.file.Path (khuyên dùng hơn)
+    // Cách 2: java.nio.file.Path
     java.nio.file.Path path2 = java.nio.file.Paths.get("logs", "transactions.txt");
 
     Assertions.assertTrue(path.contains("transactions.txt"));
