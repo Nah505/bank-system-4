@@ -1,10 +1,9 @@
 package com.banksystem;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.banksystem.InvalidFundingAmountException;
 import com.banksystem.Transaction;
+import java.util.ArrayList;
+import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

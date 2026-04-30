@@ -1,7 +1,5 @@
 package com.banksystem;
 
-import com.banksystem.Account;
-import com.banksystem.SavingsAccount;
 
 import java.util.ArrayList;
 import java.util.List;

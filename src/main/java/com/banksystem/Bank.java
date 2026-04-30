@@ -1,15 +1,14 @@
 package com.banksystem;
 
+import com.banksystem.CheckingAccount;
+import com.banksystem.Customer;
+import com.banksystem.SavingsAccount;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import com.banksystem.CheckingAccount;
-import com.banksystem.SavingsAccount;
-import com.banksystem.Customer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -69,9 +69,9 @@ public class CheckingAccount extends Account {
       logger.info("Rút tiền vãng lai thành công. tài_khoản={} số_tiền={} số_dư_còn={}",
           getAccountNumber(), amount, finalBalance);
     } catch (InsufficientFundsException e) {
-        throw new RuntimeException(e);
+      throw new RuntimeException(e);
     } catch (InvalidFundingAmountException e) {
-        throw new RuntimeException(e);
+      throw new RuntimeException(e);
     }
   }
 }

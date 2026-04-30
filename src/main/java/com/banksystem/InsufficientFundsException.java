@@ -1,7 +1,6 @@
 package com.banksystem;
 
 import com.banksystem.BankException;
-
 import java.util.Locale;
 
 /**
