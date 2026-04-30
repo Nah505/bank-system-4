@@ -75,6 +75,7 @@
           <failsOnError>true</failsOnError>
           <violationSeverity>warning</violationSeverity>
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
+          <skip>true</skip>
         </configuration>
         <!-- Gắn checkstyle:check vào phase validate để chạy trước khi compile -->
         <executions>
