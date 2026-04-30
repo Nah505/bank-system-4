@@ -68,10 +68,10 @@ public class CheckingAccount extends Account {
       // INFO: sự kiện nghiệp vụ quan trọng — rút tiền thành công
       logger.info("Rút tiền vãng lai thành công. tài_khoản={} số_tiền={} số_dư_còn={}",
           getAccountNumber(), amount, finalBalance);
-    } catch (InsufficientFundsException e) {
-      throw new RuntimeException(e);
-    } catch (InvalidFundingAmountException e) {
-      throw new RuntimeException(e);
+    } catch (BankException e) {
+      // WARN: rút tiền thất bại nhưng hệ thống vẫn tiếp tục — cần theo dõi
+      logger.warn("Rút tiền vãng lai thất bại. tài_khoản={} lý_do={}",
+          getAccountNumber(), e.getMessage());
     }
   }
 }
